@@ -1,0 +1,25 @@
+th, td {
+  text-align: center;
+}
+
+#employeeTable {
+  border: 1px solid #ccc;
+}
+
+.table-header {
+  background-color: #065eaf;
+  color: white;
+}
+
+.custom-a-tag {
+  color: #065eaf;
+  text-underline: #065eaf;
+  cursor: pointer;
+}
+
+.th-header {
+  background-color: #065eaf !important;
+  color: #fff !important;
+}
+
+

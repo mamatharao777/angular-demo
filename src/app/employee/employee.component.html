@@ -1,0 +1,21 @@
+<div class="container-fluid" style="width: 80%">
+  <div class="card">
+    <h1>Employee - {{employee.empId}}</h1>
+
+    <div style="padding-top: 16px;">
+      <h5>First Name: {{employee.firstName}}</h5>
+      <h5>Last Name: {{employee.lastName}}</h5>
+      <h5>Manager: {{employee.empManager}}</h5>
+    </div>
+    <div style="width: 100%; padding-top: 16px;">
+      <div style="width: 40%; display: inline-block; text-align: center">
+        <strong>Num of git commits per month</strong>
+        <p-chart type="polarArea" [data]="polarChartData"></p-chart>
+      </div>
+      <div style="width: 40%;display: inline-block; text-align: center">
+        <strong>Tickets assigned vs Tickets cleared per sprint</strong>
+        <p-chart type="bar" [data]="barGraphData"></p-chart>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="login-page">
+  <div class="form">
+    <form class="login-form">
+      <input type="text" placeholder="username" name="username" [(ngModel)]="username"/>
+      <input type="password" placeholder="password" name="password" [(ngModel)]="password"/>
+      <button (click)="login()" [ngClass]="{'disabled': loading}">
+        Login <span style="padding-left: 10px;">
+        <i class="fa fa-spin fa-spinner" style="font-size: 16px;" *ngIf="loading"></i>
+      </span>
+      </button>
+      <div style="padding-top: 16px; font-size: 12px;">
+        Sample username - user1 / password - anything
+      </div>
+      <div style="color: red; font-size: 12px; padding-top: 16px;"
+           *ngIf="errorMsg!==''"><strong>* {{errorMsg}}</strong>
+      </div>
+    </form>
+  </div>
+</div>
